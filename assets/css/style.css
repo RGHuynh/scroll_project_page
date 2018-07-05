@@ -1,0 +1,20 @@
+.masthead {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  padding: 0;
+  background: url("/assets/img/black-and-white-black-and-white-dark-702139.jpg") no-repeat bottom center scroll;
+  background-color: white;
+  background-size: cover;
+}
+
+.masthead .intro-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.description-section .description-content {
+  text-align: end;
+  padding: 0 8px; 
+}
