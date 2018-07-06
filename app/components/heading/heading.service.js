@@ -4,23 +4,27 @@
     .factory('headingService', headingService)
 
     function headingService(){
+      var slideIndex = 0;
       var service = {
-        backgroundStyle: backgroundStyle,
-        slides: slides
+        carousel: carousel
       };
 
       return service;
 
-      function slides(){
-        return ['picture2.jpg', 'picture1.jpg']
-      }
-      
-      function backgroundStyle(image) {
-        var style = {
-          background: 'url(/assets/img/' + image + ') no-repeat bottom center',
-          backgroundSize: 'cover'
+      function carousel(){
+        var index = 0;
+        var backgroundElement = document.getElementsByClassName("mySlides");
+        for (; index < backgroundElement.length; index++){
+          backgroundElement[index].style.display = 'none';
+          backgroundElement[index].style.backgroundSize = 'cover';
+          backgroundElement[index].style.backgroundRepeat = 'no-repeat';
+          backgroundElement[index].style.backgroundPosition = 'center bottom';
         }
-        return style;
+        
+        slideIndex++;
+        if (slideIndex > backgroundElement.length){slideIndex = 1}
+        backgroundElement[slideIndex - 1].style.display = "table";
+        setTimeout(carousel, 3000);
       }
 
     };
