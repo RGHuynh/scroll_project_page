@@ -18,6 +18,8 @@
   "homepage": "https://github.com/RGHuynh/scroll_project_page#readme",
   "dependencies": {
     "angular": "^1.7.2",
-    "angular-route": "^1.7.2"
+    "angular-animate": "^1.7.2",
+    "angular-route": "^1.7.2",
+    "angular-ui-bootstrap": "^2.5.6"
   }
 }

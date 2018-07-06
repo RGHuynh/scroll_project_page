@@ -1,1 +1,1 @@
-angular.module('scrollApp', ['ngRoute']);
+angular.module('scrollApp', ['ngRoute', 'ui.bootstrap','ngAnimate']);

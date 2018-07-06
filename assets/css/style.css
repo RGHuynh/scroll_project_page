@@ -4,11 +4,15 @@
   height: 100vh;
   color: white;
   padding: 0;
-  background: url("/assets/img/black-and-white-black-and-white-dark-702139.jpg") no-repeat bottom center scroll;
+  animation: slider 10s linear infinite;
   background-color: white;
-  background-size: cover;
 }
 
+@keyframes slider {
+  0% {background: url('/assets/img/picture1.jpg') no-repeat bottom center; background-size: cover;}
+  50% {background: url('/assets/img/picture2.jpg') no-repeat bottom center; background-size: cover;}
+  100% {background: url('/assets/img/picture1.jpg') no-repeat bottom center; background-size: cover;}
+}
 .masthead .intro-body {
   display: table-cell;
   vertical-align: middle;
